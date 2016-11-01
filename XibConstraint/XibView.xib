@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2548a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XibView" customModule="XibConstraint" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="OWH-B9-aAW" id="EBo-Fw-3el"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="OWH-B9-aAW">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUd-uK-PNc">
+                    <color key="backgroundColor" red="0.3233455999" green="1" blue="0.62984764380000002" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLy-q8-GsR">
+                    <color key="backgroundColor" red="0.59332591909999999" green="0.87288079900000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGm-8E-vI2">
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="dC5-1r-q1g"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gLy-q8-GsR" firstAttribute="centerY" secondItem="aUd-uK-PNc" secondAttribute="centerY" id="9cs-fk-6Rj"/>
+                <constraint firstItem="PGm-8E-vI2" firstAttribute="centerX" secondItem="OWH-B9-aAW" secondAttribute="centerX" id="GlG-Ep-496"/>
+                <constraint firstItem="gLy-q8-GsR" firstAttribute="height" secondItem="aUd-uK-PNc" secondAttribute="height" id="R1v-lg-AAh"/>
+                <constraint firstItem="gLy-q8-GsR" firstAttribute="leading" secondItem="aUd-uK-PNc" secondAttribute="trailing" constant="20" id="VGE-J8-Ztz"/>
+                <constraint firstAttribute="trailing" secondItem="gLy-q8-GsR" secondAttribute="trailing" constant="16" id="WQY-Vy-DDW"/>
+                <constraint firstItem="PGm-8E-vI2" firstAttribute="centerY" secondItem="OWH-B9-aAW" secondAttribute="centerY" id="cra-Zz-ddS"/>
+                <constraint firstItem="aUd-uK-PNc" firstAttribute="leading" secondItem="OWH-B9-aAW" secondAttribute="leading" constant="16" id="e4q-gc-jTj"/>
+                <constraint firstItem="aUd-uK-PNc" firstAttribute="top" secondItem="OWH-B9-aAW" secondAttribute="top" constant="40" id="fKp-bJ-AwX"/>
+                <constraint firstItem="aUd-uK-PNc" firstAttribute="width" secondItem="gLy-q8-GsR" secondAttribute="width" id="gcM-gj-wJw"/>
+                <constraint firstAttribute="bottom" secondItem="aUd-uK-PNc" secondAttribute="bottom" constant="40" id="iPz-cr-cMS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="28" y="73"/>
+        </view>
+    </objects>
+</document>
